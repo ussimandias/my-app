@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
     <title>React App</title>
+
     <style>
         .cell{
           background-color: gray;   
@@ -14,20 +16,17 @@
         }
 
     </style>
-    <script src="modernizr-latest.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdno">
-    <meta name="theme-color" content="#000000">
+    <script src="modernizr-latest.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <!--
       manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->Ejh4u" 
-    crossorigin="anonymous"/>
-    <link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" />
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"/>
-    <!--
+
+    
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -111,21 +110,19 @@
 
     <div class="container">
       <div class="row"></div>
-
       <div class="jumbotron">
         <h4>Hello, your browser is not supported for this website</h4>
         <p class="lead"please switch to a supported browser></p>
         <hr class="my-4">
       </div>
-      <div id="robot-app"></div>
     </div>
 
-   
-    
     <div class="container">
         <div class="row">
-          <div class="col-xs-6">
-            <img class="card-img-top img-fluid" src="http://placehold.it/300X100" />
+
+          <div class="col-6">
+             <div id="robot-app"></div>
+            <img class="card-img-top img-fluid" src="http://placehold.it/100X25" />
               <div class="cell">
                 <h4 class="">Card Title</h4>
                 <p class="card-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
@@ -133,8 +130,9 @@
                  <br/>
                  &nbsp;
               </div>
-          </div>                  
-          <div class="col-xs-6">
+          </div>
+
+          <div class="col-6">
             <div class="cell2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -145,9 +143,7 @@
             </div>
           </div>            
         </div>
+
       </div>
     </body>
-
-    
-
 </html>
