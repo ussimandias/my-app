@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#000000">
     <title>React App</title>
     <script src="modernizr-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
@@ -63,7 +64,7 @@
               <div class="cell">
                 <h4 class="">Card Title</h4>
                 <p class="card-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                 <a href="#" class="btn btn-primary">Button</a>
+                 <a href="#" id="buttonclick" class="btn btn-primary">Button</a>
                  <br/>
                  &nbsp;
               </div>
@@ -85,9 +86,19 @@
     </body>
 </html>
 
- <script>
+<script>
+$(document).ready(function(){
+  
+  $("#buttonclick").click(function() {
 
-   alert("Hello!");
+    //alert( "Handler for .click() called." );
+
+    return window.location.replace("/retrivedataAjax.html");
+    });
+  
+});
+
+  
          
           function getTheOldLameExperience() {
                      alert("no Hello!");
@@ -137,6 +148,4 @@
               // not-supported
             }
 
-           */   
-         
-</script>
+           */</script>
